@@ -14,6 +14,11 @@ output:
     self_contained: false
 ---
 
+<style>
+body {
+text-align: justify}
+</style>
+
 
 
 
