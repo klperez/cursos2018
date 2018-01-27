@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estadística I</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Estadística I',
+                        subtitle: 'Notas de clase',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'Notas_de_clase_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Kevin Pérez C, Profesor asistente' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="Notas_de_clase_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(Notas_de_clase_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="Notas_de_clase_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+          </hgroup>
+  </slide>
+
+<slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo I - Conceptos y definiciones.</h3></hgroup><article  id="contenido-capitulo-i---conceptos-y-definiciones.">
+
+<ul class = 'build'>
+<li>Definición y ramas de la Estadística</li>
+<li>Población y Muestra<br/></li>
+<li>Parámetro, estadística y estimación<br/></li>
+<li>Tipos y clasificación de variables</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo II - Distribuciones de frecuencia</h3></hgroup><article  id="contenido-capitulo-ii---distribuciones-de-frecuencia">
+
+<ul class = 'build'>
+<li>Distribuciones de frecuencia para datos agrupados</li>
+<li>Distribuciones de frecuencia para datos no agrupados</li>
+<li>Interpretación en el contexto de la Administración<br/></li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo III - Estadísticas de resumen</h3></hgroup><article  id="contenido-capitulo-iii---estadisticas-de-resumen">
+
+<ul class = 'build'>
+<li>Medidas de tendencia central</li>
+<li>Medidas de posición</li>
+<li>Medidas de variabilidad</li>
+<li>Medidas de asimetría y apuntamiento</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo IV - Representaciones gráficas y AED</h3></hgroup><article  id="contenido-capitulo-iv---representaciones-graficas-y-aed">
+
+<ul class = 'build'>
+<li>Diagramas de barra, histogramas, polígonos de frecuencia, etc</li>
+<li>Análisis exploratorio de datos</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo V - Asociación de variables.</h3></hgroup><article  id="contenido-capitulo-v---asociacion-de-variables.">
+
+<ul class = 'build'>
+<li>Distribuciones conjuntas</li>
+<li>Distribuciones marginales</li>
+<li>Covarianza y correlación en variables continuas</li>
+<li>Correlación en variables categóricas</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Referencias</h2></hgroup><article  id="referencias">
+
+<ul class = 'build'>
+<li><p>Llinas Solano, Humberto, Estadística descriptiva y distribuciones de probabilidad. Ediciones Uninorte, 2006.</p></li>
+<li><p>Martínez Bencardino, Ciro. Estadística y Muestreo. Ecoe Ediciones. Bogotá. 2003.</p></li>
+<li><p>Rincon, Luis, Curso elemental de estadística y probabilidad, UNAM, México, 2010.</p></li>
+<li><p>Webster, Allen L, Estadística aplicada a los negocios y a la economía, Tercera edición, MacGraw - Hill, 2001.</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> ¿Qué es Estadística?</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-que-es-estadistica">
+
+<p>La <em><strong>Estadística</strong></em> se ocupa del manejo de la información que pueda ser cuantificada. Implica esto la descripción de conjuntos de datos y la inferencia a partir de la información recolectada de un fenómeno de interés. La función principal de la estadística abarca: Resumir, Simplificar, Comparar, Relacionar, Proyectar. Entre las tareas que debe enfrentar un estudio estadístico están:</p>
+
+<ul class = 'build'>
+<li><p>Delimitar con precisión la población de referencia o el conjunto de datos en estudio, las unidades que deben ser observadas, las características o variables que serán medidas u observadas.</p></li>
+<li><p>Estrategias de Observación: Censo, Muestreo, Diseño de Experimental</p></li>
+<li><p>Recolección y Registro de la información</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> ¿Qué es Estadística?</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-que-es-estadistica-1">
+
+<ul class = 'build'>
+<li><p>Depuración de la información.</p></li>
+<li><p>Construcción de Tablas.</p></li>
+<li><p>Análisis Estadístico:</p>
+
+<ul class = 'build'>
+<li>Producción de resúmenes gráficos y numéricos.</li>
+<li>Interpretación de resultados.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Población y Muestra</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-poblacion-y-muestra">
+
+<p>A grandes rasgos podemos decir que una <em><strong>Población</strong></em> es el conjunto de toda posible información, o de los objetos, que permite estudiar un fenómeno de interés.</p>
+
+<ul class = 'build'>
+<li><p>Una <em><strong>muestra</strong></em> es un subconjunto de información representativa de una población.</p></li>
+<li><p>Las <em><strong>Variables</strong></em> resultan ser aquellas <em>características de interés</em> que desean ser medidas sobre los objetos o individuos seleccionados. En la mayoría de los casos lo que se pretende es estimar, a partir de la información recolectada de una muestra, características desconocidas de los objetos en dicha población de interés.</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Población y Muestra</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-poblacion-y-muestra-1">
+
+<ul class = 'build'>
+<li><p>Las características desconocidas de una población serán llamadas <em><strong>Parámetros</strong></em>. Las características calculadas a partir de una muestra son llamadas <em><strong>Estadísticas</strong></em>. Una Inferencia es una generalización obtenida a partir de una muestra aleatoria.</p></li>
+<li><p>Cuando una estadística se utiliza para estimar un parámetro se dice <em><strong>Estimador</strong></em> y las realizaciones del estimador en una muestra seleccionada se dicen <em><strong>Estimaciones</strong></em></p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Ramas de la estadística</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-ramas-de-la-estadistica">
+
+<ul class = 'build'>
+<li><p><em><strong>Estadística descriptiva:</strong></em> Es el conjunto de métodos usados para la organización y presentación (descripción) de la información recolectada. La información recolectada puede ser catalogada de dos maneras: Datos Cualitativos y Cuantitativos.</p></li>
+<li><p><em><strong>Estadística inferencial:</strong></em> Comprende los métodos y procedimientos para deducir propiedades (hacer inferencias) de una población, a partir de una pequeña parte de la misma (muestra).</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Tipos de variables</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-tipos-de-variables">
+
+<ul class = 'build'>
+<li><p><strong>Numéricas (Cuantitativas):</strong> Valores numéricos</p>
+
+<ul class = 'build'>
+<li><em>Continuas</em>: Número infinito de valores dentro de un rango determinado</li>
+<li><em>Discretas</em>: Conjunto especifico de valores que pueden ser contados o enumerados</li>
+</ul></li>
+<li><p><strong>Categóricas (Cualitativas):</strong> Un número limitado de distintas categorías</p>
+
+<ul class = 'build'>
+<li><em>Nominales</em>: Indican pertenencia o relación con una categoria definiendo un atributo</li>
+<li><em>Ordinales</em>: Número finito de valores dentro de un rango determinado</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Escalas de medición de las variables</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-escalas-de-medicion-de-las-variables">
+
+<ul class = 'build'>
+<li><p>Nominal</p></li>
+<li><p>Ordinal</p></li>
+<li><p>Intervalo</p></li>
+<li><p>Razón</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Nominales</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-nominales">
+
+<ul class = 'build'>
+<li><p>Se usa para asignar casos individuales a categorías</p></li>
+<li><p>Los estudiantes de UPB vienen de muchos Municipios diferentes</p></li>
+<li><p>El municipio de origen es una variable Nominal</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Ordinales</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-ordinales">
+
+<ul class = 'build'>
+<li><p>Utilizada para ordenar casos de nominas</p></li>
+<li><p>Los municipios se pueden ordenar según el tamaño de la población</p></li>
+<li><p>La clasificación por tamaño es una variable ordinal</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Intervalos</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-intervalos">
+
+<ul class = 'build'>
+<li><p>Se usa para ordenar los casos donde la distancia o intervalo entre cada valor es igual</p></li>
+<li><p>Cada país tiene una longitud y latitud</p></li>
+<li><p>La longitud y la latitud son variables de intervalo</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Razón</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-razon">
+
+<ul class = 'build'>
+<li><p>Igual que las variables de intervalo, pero tienen un &quot;cero absoluto&quot;</p></li>
+<li><p>Población (población de 0 = extinto)</p></li>
+<li><p>Temperatura °C (la escala de Celsius)</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Cápitulo I - Conceptos y definiciones </h2><h3> Resumen</h3></hgroup><article  id="capitulo-i---conceptos-y-definiciones-resumen">
+
+<p>De acuerdo con la posible relación que pudieran guardar los valores de una variable, se cuenta por lo menos con cuatro escalas de medición. Las variables <code>cualitativas</code> pueden ser clasificadas de acuerdo a dos escalas: <code>escala nominal</code> o <code>escala ordinal</code>. Mientras que las variables <em><strong>cuantitativas</strong></em> pueden clasificarse por: <em><strong>escala de intervalo</strong></em> o <em><strong>escala de razón</strong></em>.</p></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "Notas_de_clase_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
