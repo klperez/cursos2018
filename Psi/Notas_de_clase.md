@@ -62,7 +62,7 @@ text-align: justify}
 
 - ARON, A.y ARON, E. (2003). Estadística para Psicología. Brasil.. Prentice Hall.
 - BLALOCK, H. (1987). Estadística Social. México. Fondo de Cultura Económica.
-- GUILFORD, J. y otro. (1978). Estadística Aplicada a la Psicología y a la Educación. Mexico. Mc Graw Hill.
+- GUILFORD, J. y otro. (1978). Estadística Aplicada a la Psicología y a la Educación. México. Mc Graw Hill.
 - Martínez Bencardino, Ciro. Estadística y Muestreo. Ecoe Ediciones. Bogotá. 2003
 - Estadística descriptiva y distribuciones de probabilidad. Humberto Llinas Solano. Ediciones uninorte 2006
 
@@ -167,3 +167,117 @@ A grandes rasgos podemos decir que una _**Población**_ es el conjunto de toda p
 
 De acuerdo con la posible relación que pudieran guardar los valores de una variable, se cuenta por lo menos con cuatro escalas de medición. Las variables `cualitativas` pueden ser clasificadas de acuerdo a dos escalas: `escala nominal` o `escala ordinal`. Mientras que las variables _**cuantitativas**_ pueden clasificarse por: _**escala de intervalo**_ o _**escala de razón**_.
 
+## Cápitulo II - Distribuciones de frecuencia | Introducción 
+
+La organización de los datos constituye la primera etapa de su tratamiento, pues, facilita los cálculos posteriores y evita posibles confusiones. La organización va a depender del número de observaciones distintas que se tengan y de las veces que se repitan cada una de ellas.
+
+## Cápitulo II - Distribuciones de frecuuencia | Datos no agrupados 
+
+Cuando se tiene un gran número de observaciones pero muy pocas distintas, se organizan en una tabla de frecuencias, es decir, cada uno de los valores acompañado de la frecuencia con la que se presenta. 
+
+
+## Cápitulo II - Distribuciones de frecuencia 
+La tabla 
+$$\begin{array}
+{|c|c|}
+\hline
+Valor & Frecuencia \\
+\hline
+2 & 4  \\
+4 & 4  \\
+5 & 3  \\
+6 & 2  \\
+7 & 3  \\
+8 & 3  \\
+9 & 1  \\
+\hline
+\end{array}$$
+
+Indica que el valor 2 se repite 4 veces, el valor 4 se repite 4 veces, el valor 5 se repite 3 veces, etc ...   
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+Para efectuar cálculos, sea cuál sea el tipo de distribución, se disponen
+los datos de la siguiente forma:
+
+$$\begin{array}
+{|c|c|c|c|c|}
+\hline
+x_i & f_i & F_i & h_i & H_i \\
+\hline
+x_1 & f_1 & F_1 & h_1 & H_1\\
+x_2 & f_2 & F_2 & h_2 & H_2\\
+\vdots & \vdots & \vdots & \vdots & \vdots   \\
+x_r & f_r & N_r = n & f_r & H_r =1\\
+\hline
+\end{array}$$
+Donde:  
+
+- $n$ representa al número total de observaciones (datos) en la muestra
+- $x_i$: variable es la variable de interés.
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+- $f_i$ es la frecuencia absoluta, definida como la cantidad de veces que se repite la observación (dato) en la muestra.  
+- $F_i$ es la frecuencia absoluta acumulada, que se obtiene como la suma acumulada de las frecuencias absolutas, $\sum_{i=1}^r f_i$
+- $h_i$ es la frecuencia relativa, definida como el cociente (división) de las frecuencias absolutas entre el tamaño de la muestra, $\frac{f_i}{n}$
+- $H_i$ es la frecuencia relativa acumulada, que viene dada por la suma acumulada de las frecuencias relativas acumuladas, $\sum_{i=1}^r f_i$
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+- _**Ejemplo 1:**_ Durante el mes de Enero, en la ciudad de Montería, se han registrado las siguientes temperaturas máximas:
+32, 31, 28, 29, 33, 32, 31, 30, 31, 31, 27, 28, 29, 30, 32, 31, 31, 30, 30, 29, 29, 30, 30, 31, 30, 31, 34, 33, 33, 29, 29. Construir la tabla de frecuencias.
+
+- _**Ejemplo 2:**_ El número de veces que han ido al cine en el último mes los alumnos de una clase es: 2, 3, 0, 1, 5, 3, 2, 1, 2, 3, 5, 0, 5, 4, 1, 1, 1, 2, 0, 1, 2. Construir la tabla de frecuencias. 
+
+- _**Ejercicio:**_ En un grupo de estudiantes se considera el número de ensayos que necesita cada uno para memorizar una lista de seis pares de palabras. Los resultados fueron: 5, 8, 3, 9, 6, 7, 10, 6, 7, 4, 6, 9, 5, 6, 7, 9, 4, 6, 8, 7.
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+_**Ejercicio:**_ Los psicólogos que trabajan en un Centro de Día para adultos de la tercera edad de la Ciudad de Montería, observaron el estado civil de un grupo de 120 varones que se tratan por problemas depresivos. Sus registros se presentan en la siguiente tabla:
+
+$$\begin{array}
+{|c|c|}
+\hline
+\mbox{Estado civil} & f_i \\
+\hline
+Soltero & 24  \\
+Casado & 18  \\
+Viudo & 42  \\
+Divorciado & 36  \\
+\hline
+Total & 120  \\
+\hline
+\end{array}$$
+
+- Complete la tabla 
+- ¿Cual es el porcentaje de viudos?
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+_**Ejercicio:**_ Según la Asociación de lucha contra la _Bulimia y la Anorexia_, las pautas culturales han determinado que la delgadez sea sinónimo de éxito social. Muchos jóvenes luchan para conseguir el “físico ideal” motivados por modelos, artistas o por la publicidad comercial.
+Durante el mes de marzo del año 2016, en un colegio de la ciudad de Montería, después de las vacaciones, se observó con precaución a 27 alumnos con síntomas de anorexia, registrándose los siguientes signos visibles:
+
+## Cápitulo II - Distribuciones de frecuencia 
+
+$$\begin{array}
+{|c|c|c|c|c|c|}
+\hline
+\mbox{Signo} & f_i & F_i & (\% h_i) & (\% H_i)\\
+\hline
+ \mbox{Dieta Severa} & 9 & 9 & 33.3 & 33.3\\
+\mbox{Miedo a engordar} & 3 & - & 11.1 & -\\
+\mbox{Hiperactividad} & - & 16 & 14.8 & 59.3 \\
+\mbox{Uso de laxantes} & 5 & 21 & - & 77.8\\
+\mbox{Uso de ropa holgada} & - & 27 & 22.2 & 100\\
+\hline
+Total &   \\
+\hline
+\end{array}$$
+- Complete la tabla 
+- ¿Que porcentaje de jóvenes se pueden considerar en riesgo por los factores de Miedo a engordar y Uso de laxantes?
+- ¿Cual es el factor al que se le debe prestar mayor atención?, justifique su respuesta.
+
+## Cápitulo II - Distribuciones de frecuencia | Datos agrupados 
+
+En el caso de que haya muchas observaciones, la mayoría de ellas distintas, pueden disponerse agrupándolas en intervalos e indicando el número de observaciones que caen dentro de cada intervalo.
