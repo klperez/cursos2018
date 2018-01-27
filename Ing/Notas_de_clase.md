@@ -1,0 +1,60 @@
+---
+title: "Métodos Numéricos"
+subtitle: "Notas de clase"
+author: "Kevin Pérez C, Profesor asistente"
+output: 
+  ioslides_presentation:
+    logo: logou.png
+    keep_md: yes
+    hitheme: tomorrow
+    incremental: true
+    widescreen: true
+    transition: slower
+    mathjax: local
+    self_contained: false
+---
+
+
+
+
+## Contenido | Cápitulo I - Introducción 
+
+- Introducción a los métodos numéricos 
+- Representación de los números en el computador 
+- Precisión de la representación 
+- Errores de redondeo y truncamiento 
+- Errores absolutos y relativos 
+
+## Contenido | Cápitulo II - Solución de ecuaciones 
+
+- Algoritmo del tanteo 
+- Algoritmo de Bisección 
+- Algoritmo de punto fijo 
+- Algoritmo de Newton- Raphson 
+- Algoritmo de la secante 
+- Caso de uso 
+
+## Contenido | Cápitulo III - Interpolación de funciones 
+
+- Aproximación polinomica exacta 
+- Método de los mínimos cuadrados 
+- Polinomios en el software 
+- Interpolación de lagrange
+- Caso de uso 
+
+## Contenido | Cápitulo IV - Evaluación de funciones 
+
+- Calculo de limites 
+- Derivación numérica 
+- Integración numérica 
+- Caso de uso 
+
+
+## Referencias 
+
+- Burden, Richard L, Análisis Númerico, Internatonal Thompson Editores, c1998.
+
+- Carnahan, Brice. Cálculo Númerico: Métodos aplicaciones. c1979.  
+
+
+

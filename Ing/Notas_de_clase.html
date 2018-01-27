@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Métodos Numéricos</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Métodos Numéricos',
+                        subtitle: 'Notas de clase',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'Notas_de_clase_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Kevin Pérez C, Profesor asistente' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="Notas_de_clase_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(Notas_de_clase_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="Notas_de_clase_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+          </hgroup>
+  </slide>
+
+<slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo I - Introducción</h3></hgroup><article  id="contenido-capitulo-i---introduccion">
+
+<ul class = 'build'>
+<li>Introducción a los métodos numéricos</li>
+<li>Representación de los números en el computador</li>
+<li>Precisión de la representación</li>
+<li>Errores de redondeo y truncamiento</li>
+<li>Errores absolutos y relativos</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo II - Solución de ecuaciones</h3></hgroup><article  id="contenido-capitulo-ii---solucion-de-ecuaciones">
+
+<ul class = 'build'>
+<li>Algoritmo del tanteo</li>
+<li>Algoritmo de Bisección</li>
+<li>Algoritmo de punto fijo</li>
+<li>Algoritmo de Newton- Raphson</li>
+<li>Algoritmo de la secante</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo III - Interpolación de funciones</h3></hgroup><article  id="contenido-capitulo-iii---interpolacion-de-funciones">
+
+<ul class = 'build'>
+<li>Aproximación polinomica exacta</li>
+<li>Método de los mínimos cuadrados</li>
+<li>Polinomios en el software</li>
+<li>Interpolación de lagrange</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo IV - Evaluación de funciones</h3></hgroup><article  id="contenido-capitulo-iv---evaluacion-de-funciones">
+
+<ul class = 'build'>
+<li>Calculo de limites</li>
+<li>Derivación numérica</li>
+<li>Integración numérica</li>
+<li>Caso de uso</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Referencias</h2></hgroup><article  id="referencias">
+
+<ul class = 'build'>
+<li><p>Burden, Richard L, Análisis Númerico, Internatonal Thompson Editores, c1998.</p></li>
+<li><p>Carnahan, Brice. Cálculo Númerico: Métodos aplicaciones. c1979.</p></li>
+</ul></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "Notas_de_clase_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
