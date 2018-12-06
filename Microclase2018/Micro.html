@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Regresión Lineal</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Regresión Lineal',
+                        subtitle: 'Micro clase',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'Micro_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'MSc. Kevin Pérez C' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="Micro_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="Micro_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="Micro_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="Micro_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="Micro_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(Micro_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="Micro_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+          </hgroup>
+  </slide>
+
+<style>
+body {
+text-align: justify}
+</style>
+
+<slide class=""><hgroup><h2>Regresión lineal</h2></hgroup><article  id="regresion-lineal">
+
+<p>La regresión lineal es una metodología de ajuste de curva que utiliza la técnica de mínimos cuadrados para estimar los parámetros que determinan la asociación entre dos variables.</p>
+
+<p>Concretamente se quiere:</p>
+
+<ul class = 'build'>
+<li>Investigar la naturaleza de la relación</li>
+<li>Construir modelos que describan la relación</li>
+<li>Predecir el comportamiento de una de ellas a partir de valores de la otra</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Modelo de regresión lineal</h2></hgroup><article  id="modelo-de-regresion-lineal">
+
+<p>El modelo de regresión lineal simple se puede esquematizar de manera matemática de la siguiente forma:</p>
+
+<ul class = 'build'>
+<li>El modelo \(Y_i = \mu_i + \epsilon_i = \beta_0 + \beta_1 X_i + \epsilon_i\) donde \(\epsilon_i\) son iid \(N(0, \sigma^2)\)</li>
+<li>Los parámetros \(\beta_0\) y \(\beta_1\) Son estimados vía <em>MC</em> \[\hat \beta_1 = Cor(Y, X) \frac{Sd(Y)}{Sd(X)} ~~~ \hat \beta_0 = \bar Y - \hat \beta_1 \bar X\]</li>
+<li>\(E[Y ~|~ X = x] = \beta_0 + \beta_1 x\)</li>
+<li>\(Var(Y ~|~ X = x) = \sigma^2\)</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Interpretación de los coeficientes</h2></hgroup><article  id="interpretacion-de-los-coeficientes">
+
+<p>La interpretación general se puede enunciarse teniendo en cuenta que son dos los coeficientes y del sentido que tienen en la relación de las variables con respecto a las medidas en las que estas vienen dadas, entonces teniendo en cuenta esto se tiene que:</p>
+
+<ul class = 'build'>
+<li>\(\beta_0\) (El intercepto) es el valor esperado de la respuesta cuando el predictor es 0, esto es, \[
+E[Y | X = 0] =  \beta_0 + \beta_1 \times 0 = \beta_0
+\]</li>
+<li>\(\beta_1\) (La pendiente) es el cambio esperado en la respuesta por el cambio de 1 unidad en el predictor. \[
+E[Y ~|~ X = x+1] - E[Y ~|~ X = x] =
+\beta_0 + \beta_1 (x + 1) - (\beta_0 + \beta_1 x ) = \beta_1
+\]</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Interpretación de los coeficientes</h2></hgroup><article  id="interpretacion-de-los-coeficientes-1">
+
+<p>Para el intercepto hay que tener en cuenta, que no siempre es de interés, por ejemplo, cuando \(X = 0\) siendo (\(X\) supongamos la presión arterial o la estatura de una persona, etc.) se pierde el sentido de la interpretación, por tanto al considerar \[
+Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+= \beta_0 + a \beta_1 + \beta_1 (X_i - a) + \epsilon_i
+= \tilde \beta_0 + \beta_1 (X_i - a) + \epsilon_i
+\]</p>
+
+<p>Entonces, cambiar los valores de X por un valor \(a\) afecta el intercepto, pero no la pendiente. A menudo, \(a\) se establece en \(X\) para que el intercepto se interprete como la respuesta esperada en el valor promedio de \(X\), con lo que podemos hacer interpretable el intercepto.</p>
+
+</article></slide><slide class=""><hgroup><h2>Interpretación de los coeficientes</h2></hgroup><article  id="interpretacion-de-los-coeficientes-2">
+
+<p>Ahora, consideremos el impacto de cambiar las unidades de \(X\) para hacer interpretable la relación entre \(X\) e \(Y\). Por ejemplo: Sea \(X\) la altura medida en \(m\) y \(Y\) el peso medida en kg. Entonces \(\beta_1\) está dado en \(kg/m\). Convertir \(X\) a \(cm\) implica multiplicar \(X\) por 100 \(cm/m\). Para obtener \(\beta_1\) en las unidades correctas, tenemos que dividir por 100 \(cm/m\) para que \[
+X m \times \frac{100cm}{m} = (100 X) cm
+~~\mbox{and}~~
+\beta_1 \frac{kg}{m} \times\frac{1 m}{100cm} = 
+\left(\frac{\beta_1}{100}\right)\frac{kg}{cm}
+\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Predicción</h2></hgroup><article  id="prediccion">
+
+<p>Si nos interesara predecir el resultado en un valor particular del predictor, digamos \(X\), el modelo de regresión funciona de la siguiente manera:</p>
+
+<p>\[
+\widehat{Y} = \hat \beta_0 + \hat \beta_1 X
+\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Galton’s Data</h2></hgroup><article  id="galtons-data">
+
+<p>Veamos los datos utilizados por Francis Galton en 1885. Galton fue un estadístico que inventó el término y los conceptos. De regresión y correlación, fundó la revista Biometrika,además era el primo de Charles Darwin.</p>
+
+<pre class = 'prettyprint lang-r'>library(UsingR); data(galton)
+head(galton)</pre>
+
+<pre >##   child parent
+## 1  61.7   70.5
+## 2  61.7   68.5
+## 3  61.7   65.5
+## 4  61.7   64.5
+## 5  61.7   64.0
+## 6  62.2   67.5</pre></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "Micro_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

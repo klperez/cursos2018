@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programación avanzada en R</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Programación avanzada en R',
+                        subtitle: 'Programa de Estadística - Notas de clase',
+                useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'Notas_de_clase_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'MSc. Kevin Pérez C, Docente auxiliar' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="Notas_de_clase_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="Notas_de_clase_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="Notas_de_clase_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.6s;
+      -moz-transition: opacity 0.6s ease-in 0.6s;
+      -o-transition: opacity 0.6s ease-in 0.6s;
+      transition: opacity 0.6s ease-in 0.6s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(Notas_de_clase_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="Notas_de_clase_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+          </hgroup>
+  </slide>
+
+<style>
+body {
+text-align: justify}
+</style>
+
+<slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo I - Fundamentos de R</h3></hgroup><article  id="contenido-capitulo-i---fundamentos-de-r">
+
+<ul class = 'build'>
+<li>Estructuras de datos en R</li>
+<li>Subconjuntos de objetos en R (Indexación)</li>
+<li>Operaciones vectorizadas</li>
+<li>Fechas y Horarios</li>
+<li>Manipulación de cadenas de caracteres</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo II - Estructuras de la programación en R</h3></hgroup><article  id="contenido-capitulo-ii---estructuras-de-la-programacion-en-r">
+
+<ul class = 'build'>
+<li>Estructuras de control</li>
+<li>Llamado a funciones</li>
+<li>Escritura de funciones</li>
+<li>Ambientes de trabajo y funciones (<em>Lexical Scoping</em>)</li>
+<li><em>Debugging</em> - <em>Profiling</em></li>
+<li>Simulación en R</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo III - Programación funcional en R</h3></hgroup><article  id="contenido-capitulo-iii---programacion-funcional-en-r">
+
+<ul class = 'build'>
+<li>Que es la programación funcional</li>
+<li>Conceptos de la programación funcional</li>
+<li><em>Scope</em> - <em>Closures</em></li>
+<li><em>Higher-Order Functions</em></li>
+<li><em>Filter, Map, and Reduce</em></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo IV - Programación paralela en R</h3></hgroup><article  id="contenido-capitulo-iv---programacion-paralela-en-r">
+
+<ul class = 'build'>
+<li><em>Benchmarking</em></li>
+<li>Códigos eficientes en R</li>
+<li>Mejora del rendimiento: velocidad y memoria</li>
+<li><em>Profiling</em></li>
+<li><em>The parallel Package</em></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo V - <em>Interfacing</em> R a otros lenguajes</h3></hgroup><article  id="contenido-capitulo-v---interfacing-r-a-otros-lenguajes">
+
+<ul class = 'build'>
+<li>Comenzando con C ++</li>
+<li>Atributos y clases</li>
+<li><em>Rcpp sugar</em></li>
+<li><em>The STL</em></li>
+<li><em>Snow</em></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo V - Programación orientada a objetos</h3></hgroup><article  id="contenido-capitulo-v---programacion-orientada-a-objetos">
+
+<ul class = 'build'>
+<li>Sistemas POO</li>
+<li><em>S3</em></li>
+<li><em>S4</em></li>
+<li>Otros sistemas <em>RC</em>, <em>R6</em></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo V - Paquetes en R</h3></hgroup><article  id="contenido-capitulo-v---paquetes-en-r">
+
+<ul class = 'build'>
+<li><em>The devtools Package</em></li>
+<li>Documentación</li>
+<li>Datos dentro del paquete</li>
+<li><em>Testing</em></li>
+<li>Reglas del CRAN y licencias</li>
+<li>Diseño de software<br/></li>
+<li><em>Cross Platform Development</em></li>
+<li>Integración continua</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contenido </h2><h3> Cápitulo VI - Seminario: Procesamiento escalable de datos</h3></hgroup><article  id="contenido-capitulo-vi---seminario-procesamiento-escalable-de-datos">
+
+<ul class = 'build'>
+<li>Trabajando con grandes volúmenes de información</li>
+<li>Procesamiento y análisis de datos con <em>bigmemory</em></li>
+<li>Trabajando con <em>iotools</em></li>
+<li>Big Data con R: <em>Spark</em> y <em>R</em> el paquete <em>Sparklyr</em></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2><strong>Referencias</strong></h2></hgroup><article  id="referencias">
+
+<ul class = 'build'>
+<li>Advanced R, Hadley Wickham, Chapman &amp; Hall’s R Series, New York, 2013.</li>
+<li>Mastering Software Development in R , Roger d. Peng et all, LeanPub. 2016.</li>
+<li>R Programming for Data Science, Roger d. Peng. LeanPub. 2015.</li>
+<li>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data, Hadley Wickham et all, O’REiLLY, New York, 2016.</li>
+<li>The Art of R Programming: A Tour of Statistical Software Design, Norman Matloff, New York, 2013.</li>
+</ul></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "Notas_de_clase_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

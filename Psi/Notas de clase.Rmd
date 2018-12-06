@@ -23,20 +23,27 @@ text-align: justify}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Contenido | Preámbulo. 
+
+- Fundamentos de Estadística 
+- Notación 
+- Herramientas tecnológicas 
+- Lenguaje matemático en la Psicología 
+
 
 ## Contenido | Cápitulo I - Conceptos y definiciones. 
 
 - Definición y ramas de la Estadística 
-- Población y Muestra  
-- Parámetro, estadística y estimación  
+- Conceptos de población y Muestra  
+- Conceptos de parámetro, estadística y estimación  
 - Tipos y clasificación de variables
 
-## Contenido | Cápitulo II - Distribuciones de frecuencia
+## Contenido | Cápitulo II - Estadística descriptiva 
 
-- Distribuciones de frecuencia para datos agrupados
-- Distribuciones de frecuencia para datos no agrupados
-- Interpretación en el contexto de la Psicología 
-- Caso de uso 
+- Organización de los datos en tablas de frecuencias 
+- Representaciones gráficas para datos agrupados y no agrupados 
+- Análisis exploratorio de datos 
+- Aplicaciones en SPSS
 
 ## Contenido | Cápitulo III - Estadísticas de resumen 
 
@@ -44,13 +51,14 @@ knitr::opts_chunk$set(echo = FALSE)
 - Medidas de posición 
 - Medidas de variabilidad 
 - Medidas de asimetría y apuntamiento 
-- Caso de uso 
+- Aplicaciones en SPSS
 
-## Contenido | Cápitulo IV - Representaciones gráficas y AED
+## Contenido | Cápitulo IV - Introducción a la probabilidad
 
-- Diagramas de barra, histogramas, polígonos de frecuencia, etc
-- Análisis exploratorio de datos 
-- Caso de uso 
+- Definición de probabilidad 
+- Conceptos básicos de probabilidad 
+- Distribuciones de probabilidad (Binomial, poisson, normal)
+- Aplicaciones en SPSS
 
 ## Contenido | Cápitulo V - Asociación de variables. 
 
@@ -58,7 +66,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Distribuciones marginales 
 - Covarianza y correlación en variables continuas 
 - Correlación en variables categóricas 
-- Caso de uso
+- Aplicaciones en SPSS
 
 ## Referencias 
 
@@ -67,6 +75,246 @@ knitr::opts_chunk$set(echo = FALSE)
 - GUILFORD, J. y otro. (1978). Estadística Aplicada a la Psicología y a la Educación. México. Mc Graw Hill.
 - Martínez Bencardino, Ciro. Estadística y Muestreo. Ecoe Ediciones. Bogotá. 2003
 - Estadística descriptiva y distribuciones de probabilidad. Humberto Llinas Solano. Ediciones uninorte 2006
+
+
+## Números
+
+Al considerarse los conjuntos como una colección de elementos con cierta característica que lo diferencian de los demás, los diferentes grupos numéricos: Reales, Racionales, Enteros y Naturales son catalogados como conjuntos, de tal manera que pueden representarse mediante el diagrama de Venn.
+
+<center>
+![](img1.png)
+</center>
+
+## Números
+
+Donde:
+
+- **N**: representa los números Naturales
+- **Z**: representa los números Enteros
+- **Q**: representa los números Racionales 
+- **R**: representa los números Reales
+
+## Números naturales
+
+Matemáticamente se denota al conjunto de los números naturales con
+la letra $\mathbb{N}$, tal que: 
+
+$$\mathbb{N}=\{1,2,3, \ldots\}$$
+Con estos números se pueden realizar operaciones como suma, multiplicación y potenciación.
+
+Los números Naturales tiene como subconjuntos los números pares, impares y primos.
+
+## Números naturales
+
+### Numeros pares 
+
+Se refiere a los números que son divisibles por dos $(2)$, es decir que se pueden dividir exactamente por $2$, ejemplo 2, 4,
+6, 8,10,12, ...
+
+### Numeros impares 
+
+Son los números que son indivisibles por $(2)$, es decir que no se pueden dividir por $2$, ejemplo 1, 3, 5, 7, 9, 11, 13, 15, ...
+
+## Números naturales
+
+### Numeros primos 
+
+Se dice que un número es primo si no tiene más divisores que él mismo y la unidad, ejemplo: 2, 3, 5, 7, 11, 13, 17, 19,
+23, 29, 31, 37, ...... ya que:
+
+2 únicamente se puede dividir por sí mismo 2 ÷ 2 = 1 y por la unidad
+2 ÷ 1 = 2, es decir no se puede dividir por ningún otro número.
+
+29÷ 29 = 1 y 29 ÷ 1 = 29 no hay ningún otro número que divida
+exactamente a este número.
+
+## Números enteros 
+
+Existe otro tipo de números, los Enteros $\mathbb{Z}$. Este conjunto de números está compuesto por los enteros positivos $\mathbb{Z^+}$ (que son los mismos Naturales), por los enteros negativos $\mathbb{Z^-}$ y por el cero $(0)$. Con los números enteros se pueden realizar las mismas operaciones planteadas en los Naturales más la resta.
+
+## Números racionales
+
+A los números racionales se le conoce como el conjunto $\mathbb{Q}$, está conformado por el cociente de números enteros. Todos los enteros pueden ser escritos como números racionales divididos por uno $(1)$.
+
+- Por ejemplo $\frac{9}{1}$, $\frac{-7}{1}$, ...
+
+## Números fraccionarios 
+
+En diversas situaciones de la vida cotidiana es necesario trabajar con trozos de cosas como por ejemplo media manzana, medio kilo de harina, entre otras, estos son los Números fraccionarios.
+
+Ejemplo, la siguiente figura se dividió en ocho (8) partes y se tomó una Parte (la sombreada) esto equivale a decir: $\frac{1}{8}$ donde el (1) representa al numerador (o sea las partes que se toman) y el ocho (8) el denominador (las partes en que está dividida la unidad).
+
+<center>
+![alt text](img2.png)
+</center>
+
+## Suma y resta de fraccionarios
+
+Si se tiene la siguiente suma de números fraccionarios:
+
+<center>
+![alt text](img3.png)
+</center>
+
+Se observa que todos los denominadores tienen el mismo número (3) o sea que las fracciones son homogéneas. Para la suma y resta de este tipo de fracciones se deja el mismo denominador (3) y se suman o restan los numeradores, de acuerdo con la operación planteada.
+
+## Suma y resta de fraccionarios
+
+Existe otro tipo de fraccionarios, son los que tienen los denominadores diferentes. Este tipo de fraccionarios se denominan No Homogéneos. Para llevar a cabo las operaciones de suma o resta de fraccionarios no homogéneos se debe primero hallar un denominador común para todas las fracciones y luego si realizar la operación de suma y resta de los numeradores. Veamos el siguiente ejemplo:
+<center>
+![alt text](img4.png)
+</center>
+
+## Suma y resta de fraccionarios
+
+<center>
+![alt text](img5.png)
+</center>
+
+## Suma y resta de fraccionarios
+
+El m.c.m, (30) se deja como el denominador común para todas las fracciones. Para hallar cada uno de los términos del numerador se procede de la siguiente manera: el mcm se divide por cada uno de los denominadores de las fracciones dadas (3,5,6) y se multiplican por sus respectivos numeradores.
+
+<center>
+![alt text](img6.png)
+</center>
+
+## Multiplicación de racionales
+
+<center>
+![alt text](img7.png) 
+</center>
+
+En otros casos se puede realizar una reducción 
+
+<center>
+![alt text](img8.png) 
+</center>
+
+## División de fraccionarios
+<center>
+![alt text](img9.png) 
+</center>
+
+En otros casos se puede realizar una reducción 
+
+<center>
+![alt text](img10.png) 
+</center>
+
+## División de fraccionarios
+<center>
+![alt text](img11.png) 
+</center>
+
+## Números decimales
+
+Dentro del conjunto de números racionales, se encuentra un conjunto numérico que es importante analizarlo y corresponde a los números decimales. Todos hemos escuchado la palabra decimal y globalizamos el concepto a números como 0,32, 3,25 entre otros.
+
+Para hablar de números decimales, es pertinente recordar qué es un racional y especialmente los números fraccionarios, ya que todo número fraccionario se puede escribir como número decimal.
+
+## Números decimales
+
+**Fracción decimal:** se refiere a toda fracción, cuyo denominador es la unidad seguida de ceros por ejemplo:
+
+<center>
+![alt text](img12.png) 
+</center>
+
+## Números reales 
+
+En general los números reales son todos los que hemos estudiado hasta el momento. Una de las principales características de los números reales es la de poder ser graficados en una recta. Esta es la recta real y está constituida por puntos los cuales representan un número real que puede ser racional o irracional (estos últimos, se refieren a los que tienen un número infinito de decimales, por ejemplo, el número $\pi$ que es igual 3,14159...., por este motivo no es considerado fraccionario. Los números irracionales se denotan con la letra $\mathbb{Q'}$).
+
+## Números reales 
+
+<center>
+![alt text](img13.png) 
+</center>
+
+En la gráfica, los números de la parte superior son los enteros, los de la izquierda son los enteros negativos y los de la derecha son los enteros positivos $\mathbb{Z^+}$. Es importante resaltar que también se pueden representar los números racionales $\mathbb{Q}$, por ejemplo 3/5, es decir se divide la unidad en cinco partes y se toman tres (3) partes de esta.
+
+## Potenciación 
+
+La potenciación es una operación que simplifica la multiplicación, ya que se puede decir que la potenciación es una multiplicación sucesiva. Esta operación es útil para abordar temas como la suma y resta de fraccionarios y simplificación, entre otras, por lo tanto es necesario tener muy claro el concepto de potenciación.
+
+<center>
+![alt text](img14.png) 
+</center>
+
+## Potenciación
+
+### Potencia de base positiva 
+
+Cuando la base es positiva y el exponente positivo, la potencia es positiva. A continuación se relacionan otros ejemplos:
+
+- $5^4=5\cdot 5\cdot 5\cdot5=625$
+- $12^3=12\cdot 12\cdot 12=1728$
+
+## Potenciación
+
+### Potencia de base negativa 
+
+Cuando la base es negativa, se presentan dos casos:
+
+- Si el exponente es **PAR**, la potencia es positiva. Ejemplos:
+    + $(-3)^2=3\cdot 3=9$
+    + $(-4)^4=4\cdot 4 \cdot 4 \cdot 4=256$
+
+- Si el exponente es **IMPAR**, la potencia es negativa Ejemplos:
+    + $(-3)^3=(-3)\cdot (-3) \cdot (-3)=-27$
+    + $(-7)^3=(-7)\cdot (-7) \cdot (-7)=-343$
+
+
+## Potencia de exponente negativo
+
+Cuando el exponente es negativo, aplicamos el recíproco para desarrollar la operación.
+
+- $4^{-2}=\frac{1}{4^2}=\frac{1}{16}$
+- $(4)^{-3}=\frac{1}{(4)^{-3}}=\frac{1}{-64}=-\frac{1}{64}$
+
+Se debe tener cuidado con el manejo de los signos negativos, el paréntesis indica que el número está afectado por el signo. 
+
+## Propiedades de la potenciación
+
+- **Potencia de exponente cero:** toda base cuyo exponente es cero (0), la potencia es la unidad (1). 
+$$2^0=1$$
+- **Potencia de exponente uno:** toda base cuyo exponente es la unidad, tiene como potencia, la misma cantidad. _(Ley modulativa de la potencia)_.
+$$32^1=32$$
+- **Potencia de bases iguales:** cuando se tienen dos o más bases iguales multiplicándose entre sí, se operan, dejando la misma base y sumando los exponentes.
+$$5^2+5^3+5^4=5^{(2+3+4)}=5^9=1953125$$
+
+## Propiedades de la potenciación
+
+- **Potencia de un producto:** cuando se tiene un producto de varios términos, elevados al mismo exponente, se expresa como producto de cada uno de los términos elevados al mismo exponente.
+$$(4\cdot7 \cdot 9)^2=4^2\cdot 7^2\cdot 9^2$$
+- **Potencia de un cociente:** para dividir potencias de la misma base, se restan los exponentes.
+$$2^8\div 2^5= 2^{8-5}=2^3$$
+
+## Propiedades de la potenciación
+
+- **Potencia de una potencia:** cuando una potencia está elevada a otra potencia, la potencia tiene como base, la base de la potencia y como exponente el producto de los exponentes.
+$$(2^8)^2=2^{8\cdot2}=2^{16}$$
+
+## Radicación 
+
+Es una operación inversa a la potenciación y consiste en hallar la **base**, conociendo el exponente y la potencia.
+
+$$5^3=5\times5\times5=125$$
+Entonces, para conocer la base se acude a la radicación
+$$\sqrt[3]{125}=5$$
+donde:
+- 3 es el índice de la raíz (en la potenciación es el exponente)
+- 125 es el radicando (este número corresponde a la potencia en el caso de potenciación)
+- 5 es la raíz cúbica (3) de 125 (en la potenciación corresponde a la base)
+    
+## Clases de raíces:
+
+- **Raíces de índice par:** (r= par) Las raíces de índice par tienen solución para números reales (radicando) mayores o iguales a cero. $r ≥ 0$, en este caso la solución es doble, es decir una es positiva y la otra negativa. Ejemplo:
+    - $\sqrt{16}=\pm 4$, porque $(+4)^2=16$ y $(-4)^2=16$
+    - $\sqrt{81}=\pm 9$, porque $(+9)^2=81$ y $(-9)^2=81$
+
+- **Raíces de índice impar:** (r = impar) Las raíces de índice impar tienen solución para cualquier número real. $r\in $ . La solución depende de signo del radicando. Si el radicando es positivo, la solución es positiva, pero si el radicando es negativo, la solución es negativa. Lo anterior indica que la solución de raíces de índice impar es única. Ejemplos:
+
 
 
 ## Cápitulo I - Conceptos y definiciones | ¿Qué es Estadística?
@@ -82,7 +330,7 @@ La _**Estadística**_ se ocupa del manejo de la información que pueda ser cuant
 
 ## Cápitulo I - Conceptos y definiciones | ¿Qué es Estadística?
 
--  Depuración de la información.
+- Depuración de la información.
 
 - Construcción de Tablas.
 

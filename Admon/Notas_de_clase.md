@@ -1,5 +1,5 @@
 ---
-title: "Estadística I"
+title: "Estadística"
 subtitle: "Notas de clase"
 author: "Kevin Pérez C, Profesor asistente"
 output: 
@@ -33,7 +33,7 @@ text-align: justify}
 
 - Distribuciones de frecuencia para datos agrupados
 - Distribuciones de frecuencia para datos no agrupados
-- Interpretación en el contexto de la Administración  
+- Interpretación en el contexto de la Comunicación 
 - Caso de uso 
 
 ## Contenido | Cápitulo III - Estadísticas de resumen 
@@ -57,6 +57,14 @@ text-align: justify}
 - Covarianza y correlación en variables continuas 
 - Correlación en variables categóricas 
 - Caso de uso
+
+## Contenido | Cápitulo VI - Introducción a la probabilidad
+
+- Definición de probabilidad 
+- Conceptos básicos de probabilidad 
+- Distribuciones de probabilidad (Binomial, poisson, normal)
+- Caso de uso
+
 
 ## Referencias 
 
